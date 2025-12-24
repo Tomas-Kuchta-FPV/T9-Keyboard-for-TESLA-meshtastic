@@ -173,7 +173,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x06_Pin"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -182,15 +182,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x06_Pin"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -215,7 +215,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -250,18 +250,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x06_Pin_1_1"
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Conn_01x03_Pin_1_1"
 				(rectangle
 					(start 0.8636 2.667)
 					(end 0 2.413)
@@ -293,40 +282,6 @@
 					)
 					(fill
 						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(polyline
@@ -365,32 +320,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -7.62) (xy 0.8636 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin passive line
-					(at 5.08 5.08 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -408,7 +339,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -426,7 +357,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -436,60 +367,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1669,6 +1546,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "https://chatgpt.com/share/694a6849-bc74-8010-bd0e-4c4d8f2faaa1"
+		(exclude_from_sim no)
+		(at 85.852 187.706 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "679274b4-60f6-4eac-9790-547c3182ba24")
+	)
 	(text "Active mode (not sleeping): rows are normaly high but when poling it goes low\nSleeping: All rows are low.\n\nGPIO Mode: Output"
 		(exclude_from_sim no)
 		(at 265.176 74.422 90)
@@ -1718,12 +1605,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "502b694a-ce68-48fe-8c15-8fc35a3eeddc")
-	)
-	(junction
-		(at 63.5 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5bf03169-5ca4-4982-8a09-7317e5a82736")
 	)
 	(junction
 		(at 212.09 107.95)
@@ -1814,16 +1695,40 @@
 		(uuid "1b9ad7fb-c067-4b8a-aa07-c8044d8b38c4")
 	)
 	(no_connect
+		(at 49.53 66.04)
+		(uuid "21256d4b-c99a-4b01-8e70-caa9d2ec4846")
+	)
+	(no_connect
 		(at 74.93 73.66)
 		(uuid "26435afd-3cfa-4815-af54-0885f00128a7")
+	)
+	(no_connect
+		(at 49.53 71.12)
+		(uuid "30f5a5c3-9e7a-4d0e-8f7a-daa519daf9cc")
 	)
 	(no_connect
 		(at 74.93 81.28)
 		(uuid "39bb2382-40ca-43d9-a5a5-b0382a921e7f")
 	)
 	(no_connect
+		(at 62.23 91.44)
+		(uuid "4655ef24-22c1-4ead-a6fe-4b7604a604e3")
+	)
+	(no_connect
 		(at 74.93 66.04)
 		(uuid "5f2c0b08-1424-41d7-9148-cb46b6fbebfc")
+	)
+	(no_connect
+		(at 49.53 73.66)
+		(uuid "798ca175-4df5-4020-af17-46886d62fc2f")
+	)
+	(no_connect
+		(at 49.53 68.58)
+		(uuid "8612fa67-50cf-459a-bd7c-ebe26a69c8fd")
+	)
+	(no_connect
+		(at 49.53 53.34)
+		(uuid "996adf7a-a2f3-439c-9b8f-933b04f0a9ee")
 	)
 	(no_connect
 		(at 74.93 83.82)
@@ -1836,6 +1741,10 @@
 	(no_connect
 		(at 59.69 40.64)
 		(uuid "bdf7de6a-25d5-47ff-8e1b-0949915be660")
+	)
+	(no_connect
+		(at 49.53 50.8)
+		(uuid "d041e923-99d8-4555-8f37-5adcedf7c526")
 	)
 	(no_connect
 		(at 74.93 68.58)
@@ -1874,16 +1783,6 @@
 			(type default)
 		)
 		(uuid "046f6b92-b9af-483e-9b76-ed374479f1c0")
-	)
-	(wire
-		(pts
-			(xy 38.1 63.5) (xy 49.53 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "047af621-7a84-4763-83db-d6562dd54ac5")
 	)
 	(wire
 		(pts
@@ -1934,6 +1833,26 @@
 			(type default)
 		)
 		(uuid "13c5e8bd-59b4-4b1b-9805-7f8cde2507bc")
+	)
+	(wire
+		(pts
+			(xy 46.99 60.96) (xy 49.53 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15db485a-c841-4c5a-b480-9f8341779f67")
+	)
+	(wire
+		(pts
+			(xy 60.96 140.97) (xy 63.5 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "168fbc34-b98b-47d5-ab6c-f6d82141599c")
 	)
 	(wire
 		(pts
@@ -2047,7 +1966,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 76.2) (xy 49.53 76.2)
+			(xy 46.99 81.28) (xy 49.53 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2097,6 +2016,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 63.5) (xy 49.53 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4471bdbd-79f1-413b-90be-45a2d18c18c9")
+	)
+	(wire
+		(pts
 			(xy 46.99 78.74) (xy 49.53 78.74)
 		)
 		(stroke
@@ -2134,16 +2063,6 @@
 			(type default)
 		)
 		(uuid "4a83c624-0be6-4c29-a2ca-59731946ed7d")
-	)
-	(wire
-		(pts
-			(xy 46.99 53.34) (xy 49.53 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e1c2b1d-cdbd-43eb-943f-9ba00ad311bf")
 	)
 	(wire
 		(pts
@@ -2207,16 +2126,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 60.96) (xy 49.53 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67bc39d7-9b37-4ac4-b8cd-111f796f16b9")
-	)
-	(wire
-		(pts
 			(xy 248.92 41.91) (xy 233.68 41.91)
 		)
 		(stroke
@@ -2234,16 +2143,6 @@
 			(type default)
 		)
 		(uuid "6ffc4fbf-7d28-484e-bd22-e9b3ee2b3709")
-	)
-	(wire
-		(pts
-			(xy 64.77 93.98) (xy 63.5 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70d10f31-98f1-476c-98d9-a5af166aa62c")
 	)
 	(wire
 		(pts
@@ -2284,16 +2183,6 @@
 			(type default)
 		)
 		(uuid "80af299b-e679-4273-aa75-802614479ec3")
-	)
-	(wire
-		(pts
-			(xy 62.23 93.98) (xy 63.5 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "866878ce-1326-4d01-aad6-9b9fdcf37d28")
 	)
 	(wire
 		(pts
@@ -2367,13 +2256,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 68.58) (xy 49.53 68.58)
+			(xy 60.96 143.51) (xy 63.5 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad6a6aeb-8799-4acf-ba2b-5d592bd78400")
+		(uuid "ae44c59c-59d6-431a-84cf-1515d0c332fe")
 	)
 	(wire
 		(pts
@@ -2397,16 +2286,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 66.04) (xy 49.53 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7d79b2d-042e-402d-b191-0fac653ef0c8")
-	)
-	(wire
-		(pts
 			(xy 212.09 52.07) (xy 212.09 53.34)
 		)
 		(stroke
@@ -2427,13 +2306,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 73.66) (xy 49.53 73.66)
+			(xy 63.5 146.05) (xy 63.5 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c92f27c4-72fe-4867-91e4-7860e85d3704")
+		(uuid "c429b9d6-6eb4-462c-8501-6ed8607a6914")
 	)
 	(wire
 		(pts
@@ -2454,16 +2333,6 @@
 			(type default)
 		)
 		(uuid "d22a54c0-5aa2-4150-b91f-d757b30b7c27")
-	)
-	(wire
-		(pts
-			(xy 38.1 71.12) (xy 49.53 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4b76a25-1191-4a52-bbb4-4101eb9acde9")
 	)
 	(wire
 		(pts
@@ -2537,16 +2406,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 50.8) (xy 49.53 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e05703aa-8d0f-4847-98ed-ee14cd2a3a0d")
-	)
-	(wire
-		(pts
 			(xy 212.09 97.79) (xy 210.82 97.79)
 		)
 		(stroke
@@ -2574,16 +2433,6 @@
 			(type default)
 		)
 		(uuid "e8779812-97cb-4b52-b21a-bfb77b441176")
-	)
-	(wire
-		(pts
-			(xy 62.23 91.44) (xy 62.23 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e92f04d3-3181-48d8-880f-a997c19d0004")
 	)
 	(wire
 		(pts
@@ -2647,6 +2496,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 146.05) (xy 63.5 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa59cc89-9b87-4975-be16-f788e7c7e13c")
+	)
+	(wire
+		(pts
 			(xy 212.09 53.34) (xy 210.82 53.34)
 		)
 		(stroke
@@ -2657,7 +2516,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 81.28) (xy 49.53 81.28)
+			(xy 46.99 76.2) (xy 49.53 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2686,7 +2545,7 @@
 		(uuid "fd98efbc-8ec2-42c3-a586-fa15c0d9b92e")
 	)
 	(label "column_2"
-		(at 46.99 76.2 180)
+		(at 46.99 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2716,7 +2575,7 @@
 		(uuid "1233cd14-398a-4e33-9a07-9463986fb074")
 	)
 	(label "column_0"
-		(at 46.99 81.28 180)
+		(at 46.99 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2725,8 +2584,18 @@
 		)
 		(uuid "2747d362-fd38-42ef-b04d-9189863f1fba")
 	)
+	(label "SDA"
+		(at 63.5 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55bad56d-9ad9-4101-8466-8c9a93eaa57f")
+	)
 	(label "row_1"
-		(at 46.99 53.34 180)
+		(at 46.99 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2736,7 +2605,7 @@
 		(uuid "93d4c42a-a0ce-4391-a6b1-84aece66d933")
 	)
 	(label "row_3"
-		(at 46.99 58.42 180)
+		(at 46.99 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2766,7 +2635,7 @@
 		(uuid "a27612c4-abd8-4590-8abd-69fc528fd14d")
 	)
 	(label "row_0"
-		(at 46.99 50.8 180)
+		(at 46.99 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2826,7 +2695,7 @@
 		(uuid "e5b9783d-b127-4c96-9fc9-4b8f2ddbf1aa")
 	)
 	(label "row_2"
-		(at 46.99 55.88 180)
+		(at 46.99 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2844,6 +2713,16 @@
 			(justify left bottom)
 		)
 		(uuid "f44bf56e-c218-427e-82db-dc5d121db8e7")
+	)
+	(label "SCL"
+		(at 63.5 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe667b01-15e6-4852-9611-cfef86096fa0")
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
@@ -2939,7 +2818,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 195.58 91.44 0)
 			(effects
 				(font
@@ -3332,7 +3211,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 195.58 69.85 0)
 			(effects
 				(font
@@ -3409,7 +3288,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 238.76 113.03 0)
 			(effects
 				(font
@@ -3647,7 +3526,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 195.58 113.03 0)
 			(effects
 				(font
@@ -3693,86 +3572,6 @@
 			(project "T9 Keyboard for TESLA meshtastic"
 				(path "/0192caa4-1b72-40a0-b2f4-497151f4145a"
 					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x06_Pin")
-		(at 33.02 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cf32fd6-aa42-449a-a4a8-d84c6d7a091b")
-		(property "Reference" "J2"
-			(at 33.655 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Spare"
-			(at 33.655 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 33.02 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 33.02 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "5397cfe0-b335-46e7-98bc-7efed2f294fa")
-		)
-		(pin "3"
-			(uuid "26fc3368-c389-482f-b7d8-928bf5f9d452")
-		)
-		(pin "2"
-			(uuid "a68aa036-e493-4485-a9f7-bee1c2b40b1b")
-		)
-		(pin "5"
-			(uuid "03d5693f-608b-42b5-b6ee-6ded2f0773f5")
-		)
-		(pin "1"
-			(uuid "2f7fa6ff-aed9-41dd-ac46-d060f7ddb7cd")
-		)
-		(pin "4"
-			(uuid "9d8f0014-dfaa-43b1-b207-0cecebfe7f1c")
-		)
-		(instances
-			(project ""
-				(path "/0192caa4-1b72-40a0-b2f4-497151f4145a"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3899,7 +3698,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 217.17 91.44 0)
 			(effects
 				(font
@@ -3976,7 +3775,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 238.76 91.44 0)
 			(effects
 				(font
@@ -4053,7 +3852,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 238.76 46.99 0)
 			(effects
 				(font
@@ -4099,6 +3898,77 @@
 			(project "T9 Keyboard for TESLA meshtastic"
 				(path "/0192caa4-1b72-40a0-b2f4-497151f4145a"
 					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 55.88 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93703c3e-4cc1-4187-a3ec-3b63a290158a")
+		(property "Reference" "J2"
+			(at 56.515 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "I2C"
+			(at 56.515 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 55.88 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 55.88 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca19c28e-3c36-4865-b1b3-63f375c374e8")
+		)
+		(pin "2"
+			(uuid "3570f397-e449-42ca-928c-82479bdecf4a")
+		)
+		(pin "3"
+			(uuid "05e1c3d7-24b8-442e-a79a-be3e3a9dadf5")
+		)
+		(instances
+			(project "T9 Keyboard for TESLA meshtastic"
+				(path "/0192caa4-1b72-40a0-b2f4-497151f4145a"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4320,7 +4190,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 238.76 69.85 0)
 			(effects
 				(font
@@ -4587,7 +4457,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 217.17 46.99 0)
 			(effects
 				(font
@@ -4759,7 +4629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 195.58 46.99 0)
 			(effects
 				(font
@@ -5001,6 +4871,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 63.5 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cad93164-956a-426b-8c4f-e57e6b30974c")
+		(property "Reference" "#PWR05"
+			(at 63.5 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be703d87-9679-43f9-b8e7-e7d86dbbf699")
+		)
+		(instances
+			(project "T9 Keyboard for TESLA meshtastic"
+				(path "/0192caa4-1b72-40a0-b2f4-497151f4145a"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 212.09 113.03 270)
 		(unit 1)
@@ -5026,7 +4962,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 217.17 113.03 0)
 			(effects
 				(font
@@ -5079,7 +5015,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 93.98 0)
+		(at 64.77 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5088,7 +5024,7 @@
 		(fields_autoplaced yes)
 		(uuid "de8b8369-1993-4cbe-b5c9-00dbcf3890d4")
 		(property "Reference" "#PWR01"
-			(at 63.5 100.33 0)
+			(at 64.77 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,7 +5033,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 99.06 0)
+			(at 64.77 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5105,7 +5041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 93.98 0)
+			(at 64.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5114,7 +5050,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 93.98 0)
+			(at 64.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5123,7 +5059,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 93.98 0)
+			(at 64.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,7 +5200,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TESLA:TESLA-3 FK 573 00"
 			(at 217.17 69.85 0)
 			(effects
 				(font
