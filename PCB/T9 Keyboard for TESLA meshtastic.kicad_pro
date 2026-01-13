@@ -501,7 +501,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "production-PDF_Etch/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
